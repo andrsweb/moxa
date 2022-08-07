@@ -11,5 +11,8 @@
 // Footer styles.
 @import 'footer/footer';
 
-// Home page sections styles.
-@import 'sections/home/hero';
+//Buttons
+@import 'common/buttons.scss';
+
+// Sections styles.
+@import 'sections/hero';

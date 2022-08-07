@@ -1,0 +1,15 @@
+.nav-button {
+    width: 126px;
+    height: 42px;
+    font-family: $ff;
+    font-size: $fs-s;
+    color: $black;
+    border: 1px solid $black;
+    background: transparent;
+    cursor: pointer;
+    transition: $tr;
+
+    &:hover {
+        opacity: $opacity;
+    }
+}

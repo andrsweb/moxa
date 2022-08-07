@@ -11,45 +11,45 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-size: $fs-xxxl;
+	font-size: 56px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		// font-size: 36px
 	}
 }
 
 h2, .h2 {
-	font-size: $fs-xxl;
+	font-size: 45px;
 	line-height: $lh-title;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		// font-size: 36px
 	}
 }
 
 h3, .h3 {
-	font-size: $fs-xxxl;
+	font-size: 56px;
 	line-height: $lh;
 }
 
 h4, .h4 {
-	font-size: $fs-l;
+	font-size: 45px;
 	line-height: $lh-title;
 
 	@media all and (min-width: $lg) {
-		font-size: 24px
+		// font-size: 24px
 	}
 }
 
 a {
 	display: inline-block;
-	text-decoration: underline;
+	text-decoration: none;
+	color: $black;
 	transition: color ease-out $tr;
-	font-size: $fs-sm;
+	font-size: $fs-s;
 	line-height: $lh-title;
 
 	&:hover {
-		text-decoration: none;
 		opacity: $opacity;
 	}
 }
