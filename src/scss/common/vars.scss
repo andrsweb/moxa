@@ -9,27 +9,27 @@ $xxl: 1366px;
 // Container max-width.
 $container-md: 760px;
 $container-lg: 990px;
-$container-xl: 1200px;
+$container-xl: 1100px;
 
 // Container padding.
-$container-padding: 24px;
+$container-padding: 20px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Bai Jamjuree', sans-serif;
 
 // Font sizes.
-$fs-xs	: 12px;
-$fs-sm	: 14px;
-$fs-md	: 16px;
-$fs-lg	: 18px;
-$fs-xl	: 20px;
+$fs-xs	 : 14px;
+$fs-s	 : 16px;
+$fs-sm	 : 18px;
+$fs-m	 : 20px;
+$fs-xm	 : 23px;
+$fs-l	 : 31px;
+$fs-xl	 : 32px;
+$fs-xxl	 : 45px;
+$fs-xxxl : 56px;
 
 // Font weights.
-$fw-light	: 300;
 $fw-regular	: 400;
-$fw-medium	: 500;
-$fw-semibold: 600;
 $fw-bold	: 700;
 
 // Line heights.
@@ -37,8 +37,11 @@ $lh			: 1.5;
 $lh-title	: 1.3;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	 : #FFFFFF;
+$black	 : #161513;
+$grey-bg : #F2F1EF;
+$accent  : #E94D35;
 
 // Others.
-$tr: 0.35s;
+$tr		 : 0.35s;
+$opacity : 0.7
