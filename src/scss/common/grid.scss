@@ -19,10 +19,29 @@
 	@media all and (min-width: $xxl) {
 		max-width: $container-xxl
 	}
+}
 
-	&-fluid {
-		width: 100%;
-		max-width: 100%;
-		padding: 0 $container-padding
+.container.sm {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 $container-padding;
+	margin: 0 auto;
+
+	@media all and (min-width: $md) {
+		max-width: $container-md
 	}
+
+	@media all and (min-width: $lg) {
+		max-width: $container-lg
+	}
+
+	@media all and (min-width: $xl) {
+		max-width: $container-xl
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 $container-padding
 }

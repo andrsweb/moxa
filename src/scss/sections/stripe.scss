@@ -1,0 +1,28 @@
+.stripe {
+    padding: 35px 0 150px;
+    &-wrapp {
+        display: flex;
+        align-items: center;
+        width: 110%;
+        height: 64px;
+        background: $black;
+        transform: rotate(-4deg);
+
+        .stripe-items {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            .stripe-item {
+                display: flex;
+                align-items: center;
+                color: $white;
+                margin-right: 40px;
+
+                span {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}

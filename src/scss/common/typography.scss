@@ -65,6 +65,15 @@ h5, .h5 {
 	}
 }
 
+div {
+	span {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url( '/img/general/small-star.svg' ) no-repeat;
+	}
+}
+
 a {
 	display: inline-block;
 	text-decoration: none;
