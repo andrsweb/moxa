@@ -7,9 +7,10 @@
     border: 1px solid $black;
     background: transparent;
     cursor: pointer;
-    transition: $tr;
+    transition: all $tr;
 
     &:hover {
-        opacity: $opacity;
+        color: $accent;
+        border-color: $accent;
     }
 }

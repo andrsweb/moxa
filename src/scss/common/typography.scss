@@ -7,12 +7,20 @@ h6, .h6 {
 	font-family: $ff;
 	font-weight: $fw-regular;
 	line-height: $lh-title;
-	margin: 0 0 1rem
+	margin: 0;
 }
 
 h1, .h1 {
 	font-size: 56px;
+	line-height: 1.2;
 
+	span {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background-image: url( '/img/general/title-logo.svg' ) no-repeat;
+	}
+	
 	@media all and (min-width: $lg) {
 		// font-size: 36px
 	}
@@ -41,6 +49,22 @@ h4, .h4 {
 	}
 }
 
+h5, .h5 {
+	font-size: 23px;
+	line-height: $lh-title;
+
+	span {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url( '/img/general/small-star.svg' ) no-repeat;
+	}
+
+	@media all and (min-width: $lg) {
+		// font-size: 24px
+	}
+}
+
 a {
 	display: inline-block;
 	text-decoration: none;
@@ -51,6 +75,8 @@ a {
 
 	&:hover {
 		opacity: $opacity;
+		color: $accent;
+		border-color: $accent;
 	}
 }
 

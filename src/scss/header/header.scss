@@ -1,16 +1,19 @@
 .header {
-	padding: 27px 0;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	right: 0;
+	padding: 27px 0 40px;
 
 	&-nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
-		.nav-logo {}
+		.nav-logo {
+			cursor: pointer;
+			transition: $tr;
+
+			&:hover {
+				opacity: $opacity;
+			}
+		}
 
 		.nav-menu {
 			display: flex;
@@ -25,8 +28,23 @@
 				a {
 					border-bottom: 1px solid $black;
 					padding-bottom: 2px;
+					transition: $tr;
+
+					&:hover {
+						border-color: $accent;
+					}
 				}
 			}
 		}	
+	}
+
+	&.scrolled {
+        position: static; //fixed
+        width: 100%;
+        background-color: $grey-bg;
+        box-shadow: 0 0 7px 7px rgba(214, 108, 22, 0.05);
+        padding: 10px 0 ;
+        z-index: 20;
+        transition: padding $tr;
 	}
 }
