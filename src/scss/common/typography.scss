@@ -3,7 +3,8 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6,
+p {
 	font-family: $ff;
 	font-weight: $fw-regular;
 	line-height: $lh-title;
@@ -37,7 +38,7 @@ h2, .h2 {
 
 h3, .h3 {
 	font-size: 56px;
-	line-height: $lh;
+	line-height: $lh-h3;
 }
 
 h4, .h4 {
@@ -57,6 +58,7 @@ h5, .h5 {
 		display: inline-block;
 		width: 20px;
 		height: 20px;
+		margin-right: 5px;
 		background-image: url( '/img/general/small-star.svg' ) no-repeat;
 	}
 
