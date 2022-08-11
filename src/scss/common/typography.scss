@@ -29,7 +29,18 @@ h1, .h1 {
 
 h2, .h2 {
 	font-size: 45px;
+	font-weight: $fw-regular;
+	letter-spacing: 1.44px;
 	line-height: $lh-title;
+	text-align: center;
+
+	.span {
+		display: inline-block;
+		width: 100%;
+		height: 47px;
+		background-image: url(/img/general/title-logo.svg) no-repeat;
+		background-position: center 1px ;
+	}
 
 	@media all and (min-width: $lg) {
 		// font-size: 36px
@@ -95,12 +106,20 @@ p {
 	margin-top: 0;
 	font-size: $fs-l;
 	line-height: $lh-title;
-
-	&:last-of-type {
-		margin-bottom: 0
-	}
 }
 
 b, strong {
 	font-weight: $fw-bold
+}
+
+.h2-text {
+	text-align: center;
+	font-weight: 400;
+	font-size: $fs-sm;
+	line-height: 1.7;
+	text-align: center;
+	letter-spacing: 1.44px;
+	text-transform: uppercase;
+	color: $black;
+	margin: 10px 0 60px 0;
 }
