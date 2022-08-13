@@ -1,0 +1,28 @@
+.customer {
+    padding: 45px 0 60px;
+
+	h2 {
+		margin-bottom: 59px;
+	}
+
+    &-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+
+		.customer-item {
+			width: calc( 100% / 4);
+			margin-bottom: 33px;
+			padding: 0 16px;
+
+			&-inner {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 98px;
+				width: 100%;
+				border: 1px solid $black;
+			}
+		}
+	}
+}
