@@ -1,5 +1,5 @@
 .portfolio {
-	padding: 69px 0 60px;
+	padding: 63px 0 60px;
 
 	&-wrapp {
 		display: flex;
@@ -9,6 +9,7 @@
 		.portfolio-item {
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
 			margin-bottom: 90px;
 
 			&:last-child {
@@ -17,9 +18,7 @@
 
 			.portfolio-img {
 				display: flex;
-				justify-content: center;
 				width: 45%;
-				padding-left: 8%;
 			}
 
 			.portfolio-inner {
@@ -67,12 +66,8 @@
 			&.reverse {
 				flex-direction: row-reverse;
 
-				.portfolio-inner {
-					padding: 0 0 0 8%;
-				}
-
 				.portfolio-img {
-					padding: 0 8% 0 0;
+					padding: 0 0 0 2%;
 				}
 			}
 		}
