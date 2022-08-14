@@ -14,3 +14,22 @@
         border-color: $accent;
     }
 }
+
+.articles-button {
+    width: 100%;
+    padding: 13px 0;
+    border: none;
+    color: $white;
+    background: $black;
+    font-weight: $fw-regular;
+    font-size: $fs-m;
+    line-height: 1.6;
+    transition: $tr;
+    cursor: pointer;
+
+    &:hover {
+        color: $accent;
+        border-color: $accent;
+        opacity: 0.8;
+    }
+}
