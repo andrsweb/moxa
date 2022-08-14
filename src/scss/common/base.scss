@@ -37,10 +37,9 @@ ul {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 1440px;
+	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
-	margin: 0 auto;
 
 	.footer {
 		margin-top: auto
