@@ -10,7 +10,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
 // Form
 
 const toggleForm = () => {
-
     const headerForm    = document.querySelector( '.header-form' )
     const buttons       = document.querySelectorAll( '.nav-button' )
     const closeButton   = document.querySelector( '.close-button' )
