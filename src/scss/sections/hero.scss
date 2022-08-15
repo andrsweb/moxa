@@ -1,5 +1,9 @@
 .hero {
-	padding: 27px 0 50px;
+	padding: 27px 0 10px; 
+
+	@media all and (min-width: $md) {
+		padding: 27px 0 50px;
+	}
 
 	&-wrapp {
 		display: flex;
@@ -7,29 +11,53 @@
 		align-items: center;
 
 		.hero-text-wrapp {
-			width: 674px;
-			margin-right: 44px;
-			padding: 89px 0 104px;
+			width: 100%; 
+			margin-right: 0px; 
+			padding: 30px 0 30px; 
+			text-align: center; 
+
+			@media all and (min-width: $lg) {
+				width: 50%;
+				text-align: left;
+			}
+
+			@media all and (min-width: $xxl) {
+				width: 674px;
+				margin-right: 44px;
+				padding: 89px 0 104px;
+			}
 
 			h1 {
 				margin-bottom: 40px;
 			}
 
 			.hero-subtext {
-				width: 473px;
-				align-items: center;
+				width: 50%; 
 				margin-bottom: 38px;
+
+				@media all and (min-width: $lg) {
+					width: 473px;
+				}
 
 				h5 {
 					display: flex;
 					align-items: center;
-					justify-content: space-between;
+					justify-content: center; 
+
+					@media all and (min-width: $lg) {
+						justify-content: space-between;
+					}
 				}
 			}
 		}
 
 		.hero-items {
 			display: flex;
+			justify-content: center; 
+			
+			@media all and (min-width: $lg) {
+				justify-content: flex-start;
+			}
 
 			.hero-text {
 				display: flex;
@@ -49,7 +77,22 @@
 		}
 
 		.hero-image-wrapp {
-			width: 562px;
+			display: flex;
+			justify-content: center;
+			width: 100%; 
+
+			@media all and (min-width: $lg) {
+				width: 50%;
+			}
+
+			@media all and (min-width: $xl) {
+				padding-left: 2%;
+			}
+
+			@media all and (min-width: $xxl) {
+				width: 562px;
+				padding: 0;
+			}
 		}
 	}
 }

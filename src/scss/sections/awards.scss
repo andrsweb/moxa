@@ -1,5 +1,9 @@
 .awards {
-	padding: 59px 0 60px;
+	padding: 30px 0 30px; 
+
+	@media all and (min-width: $lg) {
+		padding: 59px 0 60px;
+	}
 
 	&-items {
 		display: flex;
@@ -11,7 +15,11 @@
 			align-items: center;
 			border: 2px solid $black;
 			margin-bottom: 24px;
-			padding: 36px 34px;
+			padding: 10px 10px; 
+
+			@media all and (min-width: $lg) {
+				padding: 36px 34px;
+			}
 
 			&:last-child {
 				margin-bottom: 0;
@@ -25,11 +33,17 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					width: 48px;
-					height: 48px;
+					width: 24px; 
+					height: 24px; 
 					background: $accent;
 					color: $white;
-					margin-right: 24px;
+					margin-right: 14px; 
+
+					@media all and (min-width: $lg) {
+						width: 48px;
+						height: 48px;
+						margin-right: 24px;
+					}
 				}
 				
 				.award-text-wrapp {
@@ -38,17 +52,25 @@
 
 					.award-title {
 						font-weight: $fw-regular;
-						font-size: $fs-xm;
+						font-size: $fs-sm; 
 						line-height: 1.4;
 						letter-spacing: 0.1px;
 						color: $black;
+
+						@media all and (min-width: $lg) {
+							font-size: $fs-xm;
+						}
 					}
 
 					.award-subtitle {
 						font-weight: $fw-regular;
-						font-size: $fs-sm;
+						font-size: $fs-xs; 
 						line-height: 1.8;
-						color: $black;                        
+						color: $black;     
+						
+						@media all and (min-width: $lg) {
+							font-size: $fs-sm;
+						}
 					}
 				}
 			}
@@ -58,13 +80,21 @@
 
 				.award-text, .award-date {
 					font-weight: $fw-regular;
-					font-size: $fs-s;
+					font-size: $fs-extra; 
 					line-height: 2;
-					color: $black;                    
+					color: $black;         
+					
+					@media all and (min-width: $lg) {
+						font-size: $fs-s;
+					}
 				}
 
 				.award-date {
-					margin-left: 21px;
+					margin-left: 5px; 
+
+					@media all and (min-width: $lg) {
+						margin-left: 21px;
+					}
 				}
 			}
 		}    

@@ -1,52 +1,127 @@
 .lead {
-    padding: 44px 0 60px;
+    padding: 20px 0 30px; 
+
+    @media all and (min-width: $lg) {
+        padding: 44px 0 60px;
+    }
 
     &-wrapp {
         display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+
+        @media all and (min-width: $lg) {
+            flex-direction: row;
+        }
 
         .lead-title {
-            max-width: 408px;
-            margin-right: 67px;
+            width: 100%; 
+            text-align: center; 
+            margin-bottom: 20px; 
+
+            @media all and (min-width: $lg) {
+                width: 50%;
+            }
+
+            @media all and (min-width: $xl) {
+                width: 408px;
+                margin-right: 38px;
+                text-align: left;
+                margin-bottom: 0;
+			}
 
             h5 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin-bottom: 19px;
+
+                @media all and (min-width: $xl) {
+                    justify-content: flex-start;
+                }
             }
         }
 
         .lead-text {
-            max-width: calc( 100% - 408px);
+            width: 100%; 
+
+            @media all and (min-width: $lg) {
+                width: 50%;
+            }
+
+            @media all and (min-width: $xl) {
+                width: calc( 100% - 446px );
+			}
 
             .lead-top-text {
-                margin-bottom: 36px;
+                margin-bottom: 20px; 
                 letter-spacing: 0.64px;
+                text-align: center; 
+
+                @media all and (min-width: $lg) {
+					margin-bottom: 36px;
+                    text-align: left;
+				}
             }
 
             .lead-subtext {
-                font-size: $fs-sm;
+                font-size: $fs-sm; 
                 margin-bottom: 27px;
                 line-height: 1.7;
+                text-align: center;
+
+                @media all and (min-width: $xl) {
+                    text-align: left;
+                }
             }
 
             .lead-items {
                 display: flex;
-                margin: 0 -44px;
+                margin: 0 -10px; 
+
+                @media all and (min-width: $md) {
+					margin: 0 -25px;
+				}
+
+                @media all and (min-width: $xl) {
+                    margin: 0 -44px;
+                }
 
                 .lead-item {
                     display: flex;
                     flex-direction: column;
-                    width: calc( 100% / 3);
-                    padding: 0 44px;
+                    align-items: center; 
+                    width: calc( 100% / 3); 
+                    padding: 0 10px; 
+                    
+                    @media all and (min-width: $md) {
+                        padding: 0 25px;
+                        align-items: flex-start;
+                    }
+
+                    @media all and (min-width: $xl) {
+                        padding: 0 44px;
+                    }
 
                     .lead-item-title {
-                        font-size: $fs-xxs;
+                        font-size: $fs-extra;
                         color: $accent;
                         margin-bottom: 8px;
                     }
                     
                     .lead-item-text {
                         font-weight: $fw-bold;
-                        font-size: $fs-xm;
+                        font-size: $fs-xs; 
                         line-height: 1.4;
+                        text-align: center; 
+
+                        @media all and (min-width: $md) {
+                            font-size: $fs-xm;
+                        }
+
+                        @media all and (min-width: $lg) {
+                            text-align: left;
+                        }
                     }
                 }
             }

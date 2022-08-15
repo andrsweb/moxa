@@ -16,10 +16,14 @@ body {
 	height: auto;
 	background: $grey-bg;
 	font-family: $ff;
-	font-size: $fs-sm;
+	font-size: $fs-xxs; 
 	line-height: $lh;
 	color: $black;
-	background-color: $white
+	background-color: $white;
+
+	@media all and (min-width: $lg) {
+		font-size: $fs-sm;
+	}
 }
 
 img {

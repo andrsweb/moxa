@@ -12,7 +12,7 @@ p {
 }
 
 h1, .h1 {
-	font-size: 56px;
+	font-size: 33px; 
 	line-height: 1.2;
 
 	span {
@@ -22,17 +22,21 @@ h1, .h1 {
 		background-image: url( '/img/general/title-logo.svg' ) no-repeat;
 	}
 	
-	@media all and (min-width: $lg) {
-		// font-size: 36px
+	@media all and (min-width: $md) {
+		font-size: 56px
 	}
 }
 
 h2, .h2 {
-	font-size: 45px;
+	font-size: 30px; 
 	font-weight: $fw-regular;
 	letter-spacing: 1.44px;
 	line-height: $lh-title;
 	text-align: center;
+
+	@media all and (min-width: $md) {
+		font-size: 45px;
+	}
 
 	.span {
 		display: inline-block;
@@ -41,40 +45,40 @@ h2, .h2 {
 		background-image: url(/img/general/title-logo.svg) no-repeat;
 		background-position: center 1px ;
 	}
-
-	@media all and (min-width: $lg) {
-		// font-size: 36px
-	}
 }
 
 h3, .h3 {
-	font-size: 56px;
+	font-size: 30px; 
 	line-height: $lh-h3;
+
+	@media all and (min-width: $md) {
+		font-size: 56px;
+	}
 }
 
 h4, .h4 {
 	font-size: 45px;
 	line-height: $lh-title;
-
-	@media all and (min-width: $lg) {
-		// font-size: 24px
-	}
 }
 
 h5, .h5 {
-	font-size: 23px;
+	font-size: 14px; 
 	line-height: $lh-title;
+
+	@media all and (min-width: $md) {
+		font-size: 23px;
+
+		span {
+			margin: 0 5px;
+		}
+	}
 
 	span {
 		display: inline-block;
 		width: 20px;
 		height: 20px;
-		margin-right: 5px;
+		margin-right: 0px; 
 		background-image: url( '/img/general/small-star.svg' ) no-repeat;
-	}
-
-	@media all and (min-width: $lg) {
-		// font-size: 24px
 	}
 }
 
@@ -92,8 +96,12 @@ a {
 	text-decoration: none;
 	color: $black;
 	transition: color ease-out $tr;
-	font-size: $fs-s;
+	font-size: $fs-xxs;
 	line-height: $lh-title;
+
+	@media all and (min-width: $sm) {
+		font-size: $fs-s;
+	}
 
 	&:hover {
 		opacity: $opacity;
@@ -104,8 +112,12 @@ a {
 
 p {
 	margin-top: 0;
-	font-size: $fs-l;
+	font-size: $fs-sm; 
 	line-height: $lh-title;
+
+	@media all and (min-width: $md) {
+		font-size: $fs-l;
+	}
 }
 
 b, strong {
@@ -115,11 +127,16 @@ b, strong {
 .h2-text {
 	text-align: center;
 	font-weight: 400;
-	font-size: $fs-sm;
+	font-size: $fs-xxs; 
 	line-height: 1.7;
 	text-align: center;
 	letter-spacing: 1.44px;
 	text-transform: uppercase;
 	color: $black;
-	margin: 12px 0 62px 0;
+	margin: 12px 0 32px 0; 
+
+	@media all and (min-width: $md) {
+		font-size: $fs-sm;
+		margin: 12px 0 62px 0;
+	}
 }
