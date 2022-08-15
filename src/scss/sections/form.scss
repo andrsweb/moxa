@@ -1,0 +1,35 @@
+.moxa-form {
+	padding: 60px 0 50px;
+	background: $darkgrey;
+
+	.form {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-text, ::-moz-placeholder {
+			font-weight: $fw-regular;
+			font-size: $fs-xm;
+			line-height: 1.4;
+			letter-spacing: 0.48px;
+			color: $black;
+		}
+
+		input {
+			width: 354px;
+			height: 56px;
+			border: 2px solid black;
+			background: transparent;
+			padding-left: 21px;
+			margin-right: 23px;
+		}
+
+		fieldset {
+			border: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0;
+		}
+	}
+}

@@ -1,35 +1,54 @@
 .nav-button {
-    width: 126px;
-    height: 42px;
-    font-family: $ff;
-    font-size: $fs-s;
-    color: $black;
-    border: 1px solid $black;
-    background: transparent;
-    cursor: pointer;
-    transition: all $tr;
+	width: 126px;
+	height: 42px;
+	font-family: $ff;
+	font-size: $fs-s;
+	color: $black;
+	border: 1px solid $black;
+	background: transparent;
+	cursor: pointer;
+	transition: all $tr;
 
-    &:hover {
-        color: $accent;
-        border-color: $accent;
-    }
+	&:hover {
+		color: $accent;
+		border-color: $accent;
+	}
 }
 
 .articles-button {
-    width: 100%;
-    padding: 13px 0;
-    border: none;
-    color: $white;
-    background: $black;
-    font-weight: $fw-regular;
-    font-size: $fs-m;
-    line-height: 1.6;
-    transition: $tr;
-    cursor: pointer;
+	width: 100%;
+	padding: 13px 0;
+	border: none;
+	color: $white;
+	background: $black;
+	font-weight: $fw-regular;
+	font-size: $fs-m;
+	line-height: 1.6;
+	transition: $tr;
+	cursor: pointer;
 
-    &:hover {
-        color: $accent;
-        border-color: $accent;
-        opacity: $opacity;
-    }
+	&:hover {
+		color: $accent;
+		border-color: $accent;
+		opacity: $opacity;
+	}
+}
+
+.form-button {
+	padding: 12px 19px;
+	font-weight: $fw-regular;
+	font-size: $fs-xm;
+	line-height: 1.4;
+	letter-spacing: 0.48px;
+	color: $white;    
+	background: $black;
+	border: none;
+	transition: $tr;
+	cursor: pointer;
+
+	&:hover {
+		color: $accent;
+		border-color: $accent;
+		opacity: $opacity;
+	}
 }
