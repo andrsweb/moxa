@@ -1,5 +1,5 @@
 .moxa-form {
-	padding: 60px 0 50px;
+	padding: 60px 0 60px;
 	background: $darkgrey;
 
 	.form {
@@ -7,12 +7,13 @@
 		justify-content: space-between;
 		align-items: center;
 
-		&-text, ::-moz-placeholder {
+		&-text, ::placeholder {
 			font-weight: $fw-regular;
 			font-size: $fs-xm;
 			line-height: 1.4;
 			letter-spacing: 0.48px;
 			color: $black;
+			opacity: 1;
 		}
 
 		input {

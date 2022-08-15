@@ -1,3 +1,5 @@
+//global
+import './common/global'
 //header
 import './sections/header/header'
 //sections

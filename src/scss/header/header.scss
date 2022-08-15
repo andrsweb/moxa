@@ -39,10 +39,10 @@
 	}
 
 	&.scrolled {
-        position: static; //fixed
+        position: fixed; //fixed
         width: 100%;
         background-color: $grey-bg;
-        box-shadow: 0 0 7px 7px rgba(214, 108, 22, 0.05);
+        box-shadow: 5px 5px 17px 5px rgba(243, 110, 2, 0.13);
         padding: 10px 0 ;
         z-index: 20;
         transition: padding $tr;
