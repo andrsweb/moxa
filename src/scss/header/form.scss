@@ -45,16 +45,18 @@
                 border-style:solid;
             }
 
-            .name {
-                background-image: url( '/img/form/name.png') no-repeat bottom 2px right 10px ;
+            .name, .email, .phone {
+                background-image: url( '/img/form/name.png');
+                background-repeat: no-repeat;
+                background-position: 95% 5%;
             }
 
             .email {
-                background-image: url( '/img/form/email.png') no-repeat bottom 2px right 10px;
+                background-image: url( '/img/form/email.png');
             }
 
             .phone {
-                background-image: url( '/img/form/phone.png') no-repeat bottom 2px right 10px;
+                background-image: url( '/img/form/phone.png');
             }
 
             .text-area {

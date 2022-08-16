@@ -19,7 +19,8 @@ h1, .h1 {
 		display: inline-block;
 		width: 40px;
 		height: 40px;
-		background-image: url( '/img/general/title-logo.svg' ) no-repeat;
+		background-image: url( '/img/general/title-logo.svg' );
+		background-repeat: no-repeat;
 	}
 	
 	@media all and (min-width: $md) {
@@ -42,8 +43,9 @@ h2, .h2 {
 		display: inline-block;
 		width: 100%;
 		height: 47px;
-		background-image: url(/img/general/title-logo.svg) no-repeat;
+		background-image: url( '/img/general/title-logo.svg' );
 		background-position: center 1px ;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -78,7 +80,8 @@ h5, .h5 {
 		width: 20px;
 		height: 20px;
 		margin-right: 0px; 
-		background-image: url( '/img/general/small-star.svg' ) no-repeat;
+		background-image: url( '/img/general/small-star.svg' );
+		background-repeat: no-repeat;
 	}
 }
 
@@ -87,7 +90,8 @@ div {
 		display: inline-block;
 		width: 20px;
 		height: 20px;
-		background-image: url( '/img/general/small-star.svg' ) no-repeat;
+		background-image: url( '/img/general/small-star.svg' );
+		background-repeat: no-repeat;
 	}
 }
 
