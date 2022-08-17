@@ -34,9 +34,14 @@
 		border: 3px solid $black;
 		margin-bottom: 30px;
 		align-items: center;
+		background: $grey-bg;
 
 		@media all and (min-width: $lg) {
 			margin-bottom: 97px;
+		}
+
+		@media all and (min-width: $xl) {
+			background: transparent;
 		}
 
 			&:last-child {
