@@ -1,5 +1,5 @@
 .services {
-	padding: 33px 0 30px; 
+	padding: 33px 0 30px;
 
 		@media all and (min-width: $lg) {
 			padding: 63px 0 80px;
@@ -9,55 +9,55 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -20px;
+	}
 
-		.services-item {
-			display: flex;
-			width: calc( 100% / 1 ); 
-			padding: 0 20px;
-			margin-bottom: 20px; 
+	&-item {
+		display: flex;
+		width: calc( 100% / 1 );
+		padding: 0 20px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			width: calc( 100% / 2 );
+			margin-bottom: 40px;
+		}
+
+		&-title, &-text {
+			font-weight: 400;
+			line-height: 40px;
+			letter-spacing: 0.64px;
+			color: $black;
+		}
+
+		&-title {
+			font-size: $fs-xm;
+			line-height: 1.3;
+			margin-bottom: 28px;
+			text-align: center;
 
 			@media all and (min-width: $lg) {
-				width: calc( 100% / 2 );
-				margin-bottom: 40px;
+				font-size: $fs-l;
+				text-align: left;
 			}
+		}
 
-			&-title, &-text {
-				font-weight: 400;
-				line-height: 40px;
-				letter-spacing: 0.64px;
-				color: $black;    
+		&-text {
+			font-size: $fs-xs;
+			line-height: 1.8;
+			text-align: center;
+
+			@media all and (min-width: $lg) {
+				font-size: $fs-sm;
+				text-align: left;
 			}
+		}
 
-			&-title {
-				font-size: $fs-xm; 
-				line-height: 1.3;
-				margin-bottom: 28px;
-				text-align: center; 
+		&-inner {
+			padding: 20px;
+			border: 2px solid $black;
 
-				@media all and (min-width: $lg) {
-					font-size: $fs-l;
-					text-align: left;
-				}
-			}
-
-			&-text {
-				font-size: $fs-xs; 
-				line-height: 1.8;
-				text-align: center; 
-
-				@media all and (min-width: $lg) {
-					font-size: $fs-sm;
-					text-align: left;
-				}
-			}
-
-			&-inner {
-				padding: 20px; 
-				border: 2px solid $black;
-				
-				@media all and (min-width: $lg) {
-					padding: 35px 25px 24px 27px;
-				}
+			@media all and (min-width: $lg) {
+				padding: 35px 25px 24px 27px;
 			}
 		}
 	}

@@ -5,10 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>moxa.</title>
+	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 	<link rel="manifest" href="favicon/site.webmanifest">
+	<!-- Styles -->
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
 <body id="home">
@@ -19,23 +21,18 @@
 					<div class="nav-logo">
 						<a href="/">
 							<img src="img/header/header-logo.svg" width="131" height="32" alt="">
-						</a>	
+						</a>
 					</div>
 					<div class="nav-menu">
-						<div class="menu-item">
-							<a href="#home">Home</a> 
-						</div>
-						<div class="menu-item">
-							<a href="#about">About</a> 
-						</div>
-						<div class="menu-item">
-							<a href="#contact">Contact</a> 
-						</div>
-					</div>					
+						@@loop( "header-menu.html", [
+							{ "anchor":"#home", "name": "Home"},
+							{ "anchor":"#about", "name": "About"},
+							{ "anchor":"#contact", "name": "Contact"}
+						] )
+					</div>
 					<button class="nav-button">
 						Let's talk
 					</button>
 				</nav>
 			</div>
 		</header>
-		@@include( 'form.html' )

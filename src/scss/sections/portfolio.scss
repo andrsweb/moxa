@@ -1,124 +1,128 @@
 .portfolio {
-	padding: 33px 0 30px; 
+	padding: 33px 0 30px;
 
 	@media all and (min-width: $lg) {
-		padding:  63px 0 55px;	
+		padding:  63px 0 55px;
 	}
 
 	&-wrapp {
 		display: flex;
 		width: 100%;
 		flex-direction: column;
+	}
 
-		.portfolio-item {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			margin-bottom: 40px; 
+	&-item {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
 
-			@media all and (min-width: $lg) {
-				margin-bottom: 90px;
-			}
+		@media all and (min-width: $lg) {
+			margin-bottom: 90px;
+		}
 
-			&:last-child {
-				margin-bottom: 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.reverse {
+			flex-direction: row-reverse;
+
+			.portfolio-inner {
+				padding-left: 0;
+				padding-right: 3%;
 			}
 
 			.portfolio-img {
-				display: flex;
-				justify-content: center; 
-				width: 100%; 
-				margin-bottom: 20px; 
-
-				@media all and (min-width: $lg) {
-					justify-content: flex-start;
-					width: 45%;
-					margin: 0;
-				}
-			}
-
-			.portfolio-inner {
-				display: flex;
-				flex-direction: column;
 				justify-content: center;
-				width: 100%; 
 
 				@media all and (min-width: $lg) {
-					width: 55%;
-					padding-left: 3%;
-				}
-				
-				.portfolio-title {
-					display: inline-block;
-					margin-bottom: 30px;
-					text-align: center; 
-
-					@media all and (min-width: $lg) {
-						text-align: left;
-					}
-					
-					.title-span {
-						width: auto;
-						height: auto;
-						padding: 5px 15px;
-						font-weight: $fw-regular;
-						font-size: $fs-sm;
-						line-height: 1.8;
-						letter-spacing: 1.44px;
-						text-transform: uppercase;
-						color: $white;	
-						background: $accent;
-					}
-				}
-
-				.portfolio-text {
-					font-weight: 400;
-					font-size: $fs-xm; 
-					line-height: 1.2;
-					letter-spacing: 1.44px;
-					color: $black;
-					margin-bottom: 20px; 
-					text-align: center; 
-					
-					@media all and (min-width: $lg) {
-						font-size: $fs-b;
-						margin-bottom: 49px;
-						text-align: left;
-					}
-				}
-
-				.portfolio-link a {
-					font-weight: $fw-regular;
-					font-size: $fs-xs; 
-					line-height: 1.6;
-					color: $black;		
-					
-					@media all and (min-width: $lg) {
-						font-size: $fs-m;
-					}
-				}
-
-				.portfolio-link {
-					text-align: center; 
-
-					@media all and (min-width: $lg) {
-						text-align: left;
-					}
+					justify-content: flex-end;
 				}
 			}
+		}
+	}
 
-			&.reverse {
-				flex-direction: row-reverse;
+	&-img {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 20px;
 
-				.portfolio-img {
-					justify-content: center; 
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+			width: 45%;
+			margin: 0;
+		}
+	}
 
-					@media all and (min-width: $lg) {
-						padding: 0 0 0 2%;
-						justify-content: flex-start;
-					}
-				} 
-			}
+	&-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 55%;
+			padding-left: 3%;
+		}
+	}
+
+	&-title {
+		display: inline-block;
+		margin-bottom: 30px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			text-align: left;
+		}
+
+		.title-span {
+			width: auto;
+			height: auto;
+			padding: 5px 15px;
+			font-weight: $fw-regular;
+			font-size: $fs-sm;
+			line-height: 1.8;
+			letter-spacing: 1.44px;
+			text-transform: uppercase;
+			color: $white;
+			background: $accent;
+		}
+	}
+
+	&-text {
+		font-weight: 400;
+		font-size: $fs-xm;
+		line-height: 1.2;
+		letter-spacing: 1.44px;
+		color: $black;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: $fs-b;
+			margin-bottom: 49px;
+			text-align: left;
+		}
+	}
+
+	&-link a {
+		font-weight: $fw-regular;
+		font-size: $fs-xs;
+		line-height: 1.6;
+		color: $black;
+
+		@media all and (min-width: $lg) {
+			font-size: $fs-m;
+		}
+	}
+
+	&-link {
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			text-align: left;
 		}
 	}
 }

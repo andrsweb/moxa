@@ -16,7 +16,7 @@ body {
 	height: auto;
 	background: $grey-bg;
 	font-family: $ff;
-	font-size: $fs-xxs; 
+	font-size: $fs-xxs;
 	line-height: $lh;
 	color: $black;
 	background-color: $white;
@@ -29,6 +29,10 @@ body {
 img {
 	max-width: 100%;
 	height: auto
+}
+
+picture {
+	display: block;
 }
 
 ul {

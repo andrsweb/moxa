@@ -1,18 +1,18 @@
 // Defaults styles.
-@import 'common/fonts';
-@import 'common/vars';
-@import 'common/typography';
-@import 'common/grid';
-@import 'common/base';
+@import 'common/fonts';	//Connect fonts
+@import 'common/vars'; //Vars for styles
+@import 'common/typography'; //Common typography style
+@import 'common/grid'; //Grid for containers
+@import 'common/base'; //Base styles
 
-// Header styles.
+// Header style.
 @import 'header/header';
-@import 'header/form.scss';
+@import 'header/header-form.scss';
 
-// Footer styles.
+// Footer style.
 @import 'footer/footer';
 
-//Buttons
+//Buttons style.
 @import 'common/buttons.scss';
 
 // Sections styles.
@@ -25,4 +25,4 @@
 @import 'sections/services.scss';
 @import 'sections/customer.scss';
 @import 'sections/articles.scss';
-@import 'sections/form.scss';
+@import 'sections/footer-form.scss';

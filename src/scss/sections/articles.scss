@@ -1,16 +1,16 @@
 .articles {
-	padding: 30px 0 30px; 
+	padding: 30px 0 30px;
 
 	@media all and (min-width: $lg) {
-		padding: 30px 0 137px;	
+		padding: 30px 0 137px;
 	}
 
 	h2 {
-		margin-bottom: 25px; 
+		margin-bottom: 25px;
 	}
 
 	.h2-text {
-		margin-bottom: 30px; 
+		margin-bottom: 30px;
 
 		@media all and (min-width: $lg) {
 			margin-bottom: 95px;
@@ -21,101 +21,101 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		margin-bottom: 30px; 
+		margin-bottom: 30px;
 
 		@media all and (min-width: $lg) {
 			margin-bottom: 90px;
 		}
-	
-		.articles-item {
-			display: flex;
-			flex-wrap: wrap;
-			border: 3px solid $black;
-			margin-bottom: 30px; 
-			align-items: center;
+	}
 
-			@media all and (min-width: $lg) {
-				margin-bottom: 97px;
-			}
+	&-item {
+		display: flex;
+		flex-wrap: wrap;
+		border: 3px solid $black;
+		margin-bottom: 30px;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 97px;
+		}
 
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
 
-			.articles-title-wrapp {
-				display: flex;
-				flex-direction: column; 
-				align-self: center;
-				width: 100%; 
-				padding: 10px; 
-				text-align: center; 
+	&-title-wrapp {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		width: 100%;
+		padding: 10px;
+		text-align: center;
 
-				@media all and (min-width: $lg) {
-					width: 50%;
-					padding: 0 0 5px 32px;
-					text-align: left;
-				}
+		@media all and (min-width: $lg) {
+			width: 50%;
+			padding: 0 0 5px 32px;
+			text-align: left;
+		}
+	}
 
-				.articles-date {
-					display: flex;
-					justify-content: center; 
-					font-weight: $fw-regular;
-					font-size: $fs-s;
-					line-height: 2;
-					letter-spacing: 1.28px;
-					text-transform: uppercase;
-					color: $accent;
+	&-date {
+		display: flex;
+		justify-content: center;
+		font-weight: $fw-regular;
+		font-size: $fs-s;
+		line-height: 2;
+		letter-spacing: 1.28px;
+		text-transform: uppercase;
+		color: $accent;
 
-					@media all and (min-width: $lg) {
-						justify-content: flex-start;
-					}
-					
-					span {
-						background: none;
-						width: auto;
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
 
-						@media all and (min-width: $lg) {
-							margin: 0 14px;
-						}
-					}
-				}
+		span {
+			background: none;
+			width: auto;
 
-				.articles-title {
-					font-weight: $fw-regular;
-					font-size: $fs-xm;
-					line-height: 1.4;
-					letter-spacing: 0.48px;
-					color: $black;
-				}
-			}
-
-			.articles-text {
-				display: flex;
-				font-weight: $fw-regular;
-				font-size: $fs-s;
-				line-height: 1.5;
-				color: $black;
-				text-align: center;	
-				
-				&-wrapp {
-					width: 100%; 
-					padding: 12px 20px 12px 20px;
-
-					@media all and (min-width: $lg) {
-						width: 50%;
-					}
-				}
+			@media all and (min-width: $lg) {
+				margin: 0 14px;
 			}
 		}
 	}
 
-	.articles-img {
-		display: none; 
+	&-title {
+		font-weight: $fw-regular;
+		font-size: $fs-xm;
+		line-height: 1.4;
+		letter-spacing: 0.48px;
+		color: $black;
+	}
+
+	&-text {
+		display: flex;
+		font-weight: $fw-regular;
+		font-size: $fs-s;
+		line-height: 1.5;
+		color: $black;
+		text-align: center;
+
+		&-wrapp {
+			width: 100%;
+			padding: 12px 20px 12px 20px;
+
+			@media all and (min-width: $lg) {
+				width: 50%;
+			}
+		}
+	}
+
+	&-img {
+		display: none;
 		position: absolute;
-		bottom: 710px; 
-		right: 0px; 
-		transform: translateX(65%); 
-		
+		bottom: 710px;
+		right: 0px;
+		transform: translateX(65%);
+
 		@media all and (min-width: $lg) {
 			display: block;
 		}

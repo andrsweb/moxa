@@ -12,14 +12,14 @@
 
 	&-top {
 		display: flex;
-		justify-content: space-between; 
+		justify-content: space-between;
 		margin-bottom: 45px;
 
 		.footer-logo {
 			transition: ease 0.6s;
 
 			svg path {
-				transition: color 0.5s;
+				transition: all 0.5s;
 			}
 
 			&:hover {
@@ -35,7 +35,7 @@
 			display: flex;
 
 			.footer-item {
-				margin-right: 10px; 
+				margin-right: 10px;
 
 				@media all and (min-width: $md) {
                     margin-right: 45px;
@@ -52,10 +52,10 @@
 
 			.footer-item a {
 				font-weight: $fw-regular;
-				font-size: $fs-xs; 
+				font-size: $fs-xs;
 				line-height: 1.5;
 				color: $white;
-				
+
 				@media all and (min-width: $md) {
                     font-size: $fs-s;
                 }
@@ -70,7 +70,7 @@
 
 		.footer-text {
 			font-weight: $fw-regular;
-			font-size: $fs-xxs; 
+			font-size: $fs-xxs;
 			line-height: 1.7;
 			color: $grey-bg;
 
@@ -83,12 +83,12 @@
 			display: flex;
 
 			a {
-				margin-right: 5px; 
+				margin-right: 5px;
 
 				@media all and (min-width: $md) {
                     margin-right: 12px;
                 }
-				
+
 				@media all and (min-width: $xl) {
                     margin-right: 15px;
                 }

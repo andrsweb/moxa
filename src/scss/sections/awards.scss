@@ -1,5 +1,5 @@
 .awards {
-	padding: 30px 0 30px; 
+	padding: 30px 0 30px;
 
 	@media all and (min-width: $lg) {
 		padding: 59px 0 60px;
@@ -11,11 +11,16 @@
 
 		.award-item {
 			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
 			align-items: center;
 			border: 2px solid $black;
 			margin-bottom: 24px;
-			padding: 10px 10px; 
+			padding: 10px 10px;
+
+			@media all and (min-width: $s) {
+				flex-direction: row;
+			}
 
 			@media all and (min-width: $lg) {
 				padding: 36px 34px;
@@ -24,79 +29,83 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
 
-			.award-inner-left {
-				display: flex;
-				align-items: center;
+	.award-inner-left {
+		display: flex;
+		align-items: center;
 
-				.award-num {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					width: 24px; 
-					height: 24px; 
-					background: $accent;
-					color: $white;
-					margin-right: 14px; 
+		.award-num {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 24px;
+			height: 24px;
+			background: $accent;
+			color: $white;
+			margin-right: 14px;
 
-					@media all and (min-width: $lg) {
-						width: 48px;
-						height: 48px;
-						margin-right: 24px;
-					}
-				}
-				
-				.award-text-wrapp {
-					display: flex;
-					flex-direction: column;
+			@media all and (min-width: $lg) {
+				width: 48px;
+				height: 48px;
+				margin-right: 24px;
+			}
+		}
 
-					.award-title {
-						font-weight: $fw-regular;
-						font-size: $fs-sm; 
-						line-height: 1.4;
-						letter-spacing: 0.1px;
-						color: $black;
+		.award-text-wrapp {
+			display: flex;
+			flex-direction: column;
 
-						@media all and (min-width: $lg) {
-							font-size: $fs-xm;
-						}
-					}
+			.award-title {
+				font-weight: $fw-regular;
+				font-size: $fs-sm;
+				line-height: 1.4;
+				letter-spacing: 0.1px;
+				color: $black;
 
-					.award-subtitle {
-						font-weight: $fw-regular;
-						font-size: $fs-xs; 
-						line-height: 1.8;
-						color: $black;     
-						
-						@media all and (min-width: $lg) {
-							font-size: $fs-sm;
-						}
-					}
+				@media all and (min-width: $lg) {
+					font-size: $fs-xm;
 				}
 			}
 
-			.award-inner-right {
-				display: flex;
+			.award-subtitle {
+				font-weight: $fw-regular;
+				font-size: $fs-xxs;
+				line-height: 1.8;
+				color: $black;
 
-				.award-text, .award-date {
-					font-weight: $fw-regular;
-					font-size: $fs-extra; 
-					line-height: 2;
-					color: $black;         
-					
-					@media all and (min-width: $lg) {
-						font-size: $fs-s;
-					}
+				@media all and (min-width: $sm) {
+					font-size: $fs-xs;
 				}
 
-				.award-date {
-					margin-left: 5px; 
-
-					@media all and (min-width: $lg) {
-						margin-left: 21px;
-					}
+				@media all and (min-width: $lg) {
+					font-size: $fs-sm;
 				}
 			}
-		}    
+		}
+	}
+
+	.award-inner-right {
+		display: flex;
+
+		.award-text, .award-date {
+			font-weight: $fw-regular;
+			font-size: $fs-extra;
+			line-height: 2;
+			color: $black;
+
+			@media all and (min-width: $lg) {
+				font-size: $fs-s;
+			}
+		}
+
+		.award-date {
+			margin-left: 5px;
+
+			@media all and (min-width: $lg) {
+				margin-left: 21px;
+			}
+		}
 	}
 }

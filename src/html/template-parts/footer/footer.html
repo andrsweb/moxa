@@ -2,18 +2,14 @@
 			<div class="container sm">
 				<div class="footer-top">
 					<div class="footer-logo">
-						<a href="/"><img src="img/footer/footer-star.svg" width="32" height="32" alt=""></a>	
+						<a href="/"><img src="img/footer/footer-star.svg" width="32" height="32" alt=""></a>
 					</div>
 					<div class="footer-items">
-						<div class="footer-item">
-							<a href="">Style Guide</a>	
-						</div>
-						<div class="footer-item">
-							<a href="">Licence</a>	
-						</div>
-						<div class="footer-item">
-							<a href="">Changelog</a>	
-						</div>
+						@@loop( "footer-items.html", [
+							{ "name": "Style Guide"},
+							{ "name": "Licence"},
+							{ "name": "Changelog"}
+						] )
 					</div>
 				</div>
 				<div class="footer-bot">
@@ -21,21 +17,18 @@
 						© Made by Portfolio Template & powered by Flowbase
 					</div>
 					<div class="footer-icons">
-						<a href="https://www.linkedin.com" target="_blank">
-							<img src="img/footer/linkedin.svg" width="40" height="40" alt="">
-						</a>
-						<a href="https://twitter.com" target="_blank">
-							<img src="img/footer/twit.svg"  width="40" height="40" alt="">
-						</a>
-						<a href="instagram.com" target="_blank">
-							<img src="img/footer/inst.svg"  width="40" height="40" alt="">
-						</a>
+						@@loop( "footer-icons.html", [
+							{ "img": "img/footer/linkedin.svg", "link": "https://www.linkedin.com"},
+							{ "img": "img/footer/twit.svg", "link": "https://www.twitter.com"},
+							{ "img": "img/footer/inst.svg", "link": "https://www.instagram.com"}
+						])
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div><!-- .wrapper -->
 
+	@@include( '../header/header-form.html' )
 	<script src="js/main.min.js"></script>
 </body>
 </html>

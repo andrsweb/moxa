@@ -1,8 +1,8 @@
 .hero {
-	padding: 27px 0 10px; 
+	padding: 95px 0 10px;
 
 	@media all and (min-width: $md) {
-		padding: 27px 0 50px;
+		padding: 137px 0 50px;
 	}
 
 	&-wrapp {
@@ -11,10 +11,10 @@
 		align-items: center;
 
 		.hero-text-wrapp {
-			width: 100%; 
-			margin-right: 0px; 
-			padding: 30px 0 30px; 
-			text-align: center; 
+			width: 100%;
+			margin-right: 0px;
+			padding: 30px 0 30px;
+			text-align: center;
 
 			@media all and (min-width: $lg) {
 				width: 50%;
@@ -32,7 +32,7 @@
 			}
 
 			.hero-subtext {
-				width: 100%; 
+				width: 100%;
 				margin-bottom: 38px;
 
 				@media all and (min-width: $lg) {
@@ -42,7 +42,7 @@
 				h5 {
 					display: flex;
 					align-items: center;
-					justify-content: center; 
+					justify-content: center;
 
 					@media all and (min-width: $lg) {
 						justify-content: space-between;
@@ -53,8 +53,8 @@
 
 		.hero-items {
 			display: flex;
-			justify-content: center; 
-			
+			justify-content: center;
+
 			@media all and (min-width: $lg) {
 				justify-content: flex-start;
 			}
@@ -73,13 +73,14 @@
 			.nav-button {
 				width: 144px;
 				height: 50px;
+				font-size: $fs-s;
 			}
 		}
 
 		.hero-image-wrapp {
 			display: flex;
 			justify-content: center;
-			width: 100%; 
+			width: 100%;
 
 			@media all and (min-width: $lg) {
 				width: 50%;

@@ -8,21 +8,14 @@
 			REGONITIONS & ACCOIMPLISHMENTS
 		</p>
         <div class="articles-items">
-            <div class="articles-item">
-                @@loop( "articles-item.html", [ 
-				{  "name": "DESIGN", "slash": "/", "date": "April 28, 2022", "title": "Why I moved from Wordpress to Webflow", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." }
-				] )
-            </div>
-            <div class="articles-item">
-                @@loop( "articles-item.html", [ 
-				{  "name": "DESIGN", "slash": "/", "date": "April 26, 2022", "title": "What did i learn from doing 50+ design sprints", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." }
-                ] )
-            </div>
-            <div class="articles-item">
-                @@loop( "articles-item.html", [ 
-				{  "name": "BUSINESS & OFFICE", "slash": "/", "date": "April 26, 2022", "title": "What did i learn from doing 50+ design sprints", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." }
-                ] )
-            </div>
+            @@loop( "articles-item.html", [
+                { "name": "DESIGN", "slash": "/", "date": "April 28, 2022", "title": "Why I moved from Wordpress to Webflow",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." },
+                { "name": "DESIGN", "slash": "/", "date": "April 26, 2022", "title": "What did i learn from doing 50+ design sprints",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." },
+                { "name": "BUSINESS & OFFICE", "slash": "/", "date": "April 26, 2022", "title": "What did i learn from doing 50+ design sprints",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." }
+            ] )
         </div>
         <div class="articles-img">
             <img src="img/articles/star.png" width="240" height="240" alt="">

@@ -5,7 +5,16 @@
             Happy Customer
         </h2>
         <div class="customer-items">
-            @@include( 'customer-item.html' )
+            @@loop( "customer-item.html", [
+                { "img": "img/customer/tribal.svg", "link": "https://www.tribalgear.eu/" },  { "img": "img/customer/rpublica.svg", "link": "http://republicamusic.co.uk/" },
+                { "img": "img/customer/veroxfloor.svg", "link": "http://veroxfloor.com/index.html" }, { "img": "img/customer/invoice.svg", "link": "https://invoice.2go.com" },
+                { "img": "img/customer/veroxfloor.svg", "link": "http://veroxfloor.com/index.html" }, { "img": "img/customer/tribal.svg", "link": "https://www.tribalgear.eu/" },
+                { "img": "img/customer/invoice.svg", "link": "https://invoice.2go.com" }, { "img": "img/customer/rpublica.svg", "link": "http://republicamusic.co.uk/" }
+            ] )
         </div>
     </div>
 </section>
+
+
+
+

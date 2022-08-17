@@ -1,14 +1,14 @@
 .nav-button {
-	width: 50px; 
-	height: 32px; 
+	width: 50px;
+	height: 32px;
 	font-family: $ff;
-	font-size: $fs-xxs; 
+	font-size: $fs-xxs;
 	color: $black;
 	border: 1px solid $black;
 	background: transparent;
 	cursor: pointer;
 	transition: all $tr;
-	margin-left: 10px; 
+	margin-left: 10px;
 
 	@media all and (min-width: $md) {
 		width: 126px;
@@ -30,13 +30,13 @@
 	color: $white;
 	background: $black;
 	font-weight: $fw-regular;
-	font-size: $fs-xs; 
+	font-size: $fs-xs;
 	line-height: 1.6;
 	transition: $tr;
 	cursor: pointer;
 
 	@media all and (min-width: $lg) {
-		font-size: $fs-m;	
+		font-size: $fs-m;
 	}
 
 	&:hover {
@@ -47,19 +47,24 @@
 }
 
 .form-button {
-	padding: 12px 19px; 
+	padding: 12px 19px;
 	font-weight: $fw-regular;
-	font-size: $fs-xs; 
+	font-size: $fs-xs;
 	line-height: 1.4;
 	letter-spacing: 0.48px;
-	color: $white;    
+	color: $white;
 	background: $black;
 	border: none;
 	transition: $tr;
 	cursor: pointer;
 
-	@media all and (min-width: $lg) {
-		font-size: $fs-xm;	
+	@media all and (min-width: $s) {
+		padding: 9px 19px;
+	}
+
+	@media all and (min-width: $md) {
+		font-size: $fs-xm;
+		padding: 12px 19px;
 	}
 
 	&:hover {
