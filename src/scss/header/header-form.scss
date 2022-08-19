@@ -28,115 +28,170 @@
         border-radius: 20px;
         background-image: url('../img/form/bg-form.jpg');
 
+        @media all and (min-width: $sm) {
+            width: 380px;
+        }
+
         @media all and (min-width: $md) {
             justify-content: space-evenly;
             width: 600px;
         }
 
-        &-image {
-            display: none;
-
-            @media all and (min-width: $md) {
-                display: block;
-            }
+        @media all and (min-width: $lg) {
+            width: 800px;
+            height: 500px;
         }
 
-        fieldset {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            legend {
-                display: flex;
-                justify-content: center;
-                font-size: $fs-sm;
-
-                @media all and (min-width: $md) {
-                    font-size: $fs-m;
-                }
-            }
-
-            input {
-                width: 200px;
-                height: 30px;
-                margin-bottom: 10px;
-                border-style:solid;
-                padding-left: 5px;
-
-                @media all and (min-width: $md) {
-                    width: 300px;
-                }
-            }
-
-            .name,
-            .phone,
-            .email {
-                background: $white;
-
-                &::placeholder {
-                    color: $black;
-                    opacity: 0.7;
-                }
-            }
-
-            .text-area {
-                display: flex;
-                flex-direction: column;
-
-                textarea {
-                    font-family: $ff;
-                    font-size: $fs-xs;
-                    width: 200px;
-                    height: 70px;
-                    resize: none;
-                    border: 0;
-                    padding: 5px 0 0 5px;
-
-                    @media all and (min-width: $md) {
-                        width: 300px;
-                    }
-
-                    &::placeholder {
-                        color: $black;
-                        opacity: 0.7;
-                    }
-                }
-            }
-        }
-
-        .nav-button {
-            width: 120px;
-            margin: 10px 0 0 0;
-            background: $grey-bg;
-            font-size: $fs-xs; //
-        }
-
-        .close-button {
-            position: absolute;
-            top: 20px;
-            right: 10px;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-
-            span, span::after {
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 4px;
-                width: 100%;
-                background: $accent;
-                transform: rotate(45deg);
-            }
-
-            span:after {
-                content: "";
-                transform: rotate(90deg);
-            }
+        @media all and (min-width: $xl) {
+            width: 1000px;
+            height: 600px;
         }
     }
 
     &.opened {
         display: flex;
+    }
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+
+    .nav-button {
+        width: 100%;
+        height: 50px;
+        font-size: $fs-m;
+        border-radius: 10px;
+        border: 0;
+        background-color: $black;
+        color: $white;
+
+        &:hover {
+            border: 0;
+            background-color: $accent;
+            color: $white;
+        }
+    }
+}
+
+legend {
+    margin: 0 auto 20px auto;
+    font-family: $ff;
+    font-size: $fs-l;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 10px;
+    font-family: $ff;
+    font-size: $fs-m;
+    padding: 10px;
+    border: 2px solid $darkgrey;
+    border-radius: 10px;
+    transition: $tr;
+
+    @media all and (min-width: $sm) {
+        width: 350px;
+	}
+
+    @media all and (min-width: $md) {
+        width: 500px;
+	}
+
+    @media all and (min-width: $lg) {
+        width: 700px;
+        height: 40px;
+	}
+
+    @media all and (min-width: $xl) {
+        width: 900px;
+        height: 60px;
+	}
+
+    &:focus {
+        background-color: rgba(127, 162, 168, 0.418);
+    }
+}
+
+textarea {
+    font-family: $ff;
+    font-size: $fs-m;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    resize: none;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 10px;
+    transition: $tr;
+
+    @media all and (min-width: $sm) {
+        width: 350px;
+	}
+
+    @media all and (min-width: $md) {
+        width: 500px;
+	}
+
+    @media all and (min-width: $lg) {
+        width: 700px;
+    }
+
+    @media all and (min-width: $xl) {
+        width: 900px;
+        height: 150px;
+    }
+
+    &:focus {
+        background-color: rgba(127, 162, 168, 0.418);
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-image: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    span:hover::before, span:hover::after {
+        background: $accent;
+    }
+
+    span::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        right: 0;
+        height: 4px;
+        width: 100%;
+        transform: rotate(-45deg);
+        background: $black;
+        transition: $tr;
+    }
+
+    span:after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        right: 0;
+        height: 4px;
+        width: 100%;
+        background: $black;
+        transform: rotate(45deg);
+        transition: $tr;
     }
 }

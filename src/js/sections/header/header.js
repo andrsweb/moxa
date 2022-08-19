@@ -1,5 +1,4 @@
 document.addEventListener( 'DOMContentLoaded', () => {
-
     'use strict'
 
 window.addEventListener('scroll', headerScroll )

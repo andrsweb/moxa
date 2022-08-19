@@ -1,26 +1,23 @@
-document.addEventListener( 'DOMContentLoaded', () =>   {
+document.addEventListener( 'DOMContentLoaded', () => {
+	'use strict'
 
-'use strict'
-
-renderSVGs( document.querySelector('.footer') )
-smoothScrollForAnchors()
+	renderSVGs( document.querySelector( '.footer' ) )
+	smoothScrollForAnchors()
 } )
 
 //Smooth scroll for anchors
 
 const smoothScrollForAnchors = () => {
-
-const anchors = document.querySelectorAll( '.link-for-scrolling' )
-
-	if (! anchors ) return
+	const anchors = document.querySelectorAll( '.link-for-scrolling' )
+		if ( ! anchors ) return
 
 		for ( let anchor of anchors ) {
-			anchor.addEventListener( 'click', function (e) {
+			anchor.addEventListener( 'click', function ( e ) {
 				e.preventDefault()
 
-			const blockID = anchor.getAttribute( 'href' ).substr(1)
+			const blockID = anchor.getAttribute( 'href' ).substring( 1 )
 
-			document.getElementById(blockID).scrollIntoView( {
+			document.getElementById( blockID ).scrollIntoView( {
 				behavior: 'smooth',
 				block: 'start'
 			} )

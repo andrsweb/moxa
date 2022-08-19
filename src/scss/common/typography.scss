@@ -81,6 +81,10 @@ h5, .h5 {
 		margin: 0 5px;
 		background-image: url( '../img/general/small-star.svg' );
 		background-repeat: no-repeat;
+
+		@media all and (min-width: $xl) {
+			margin: 0 22px;
+		}
 	}
 }
 
